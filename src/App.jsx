@@ -13,7 +13,7 @@ export default function App() {
         <Brand />
         <div className="header-actions">
           <a className="phone" href="tel:6507229511"><Phone size={17} aria-hidden="true" /> 650 722 9511</a>
-          <a className="button button-primary" href="#contact">CONTACT ME</a>
+          <a className="button button-primary" href="tel:6507229511">CONTACT ME</a>
         </div>
       </header>
 
@@ -23,7 +23,7 @@ export default function App() {
             <p className="eyebrow">TRAIN HARD. RECOVER SMART. BECOME MORE.</p>
             <h1>STRONGER TODAY.<br />UNSTOPPABLE TOMORROW.</h1>
             <p className="lead">Personalized training and performance coaching to help athletes rise above, recover stronger, and achieve more.</p>
-            <div className="actions"><a className="button button-primary" href="#contact">CONTACT ME</a></div>
+            <div className="actions"><a className="button button-primary" href="tel:6507229511">CONTACT ME</a></div>
           </div>
           <AssetImage className="hero-art" src="/assets/hero.png" alt="IronSoul coach" label="HERO IMAGE" />
         </section>
@@ -46,7 +46,7 @@ export default function App() {
             <p className="eyebrow">RISE FROM WITHIN.</p>
             <h2>Become the athlete you were meant to be.</h2>
             <div className="features"><Feature icon={BarChart3} title="Train with Purpose" text="Every session designed to build you up." /><Feature icon={ShieldCheck} title="Stronger, Resilient, Ready" text="Build strength, confidence, and durability." /><Feature icon={Flame} title="Unleash Your Potential" text="Break limits. Set new standards." /></div>
-            <div className="actions contact-actions"><a className="button button-primary" href="mailto:cpmclaughlin83@gmail.com">CONTACT ME</a><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink><a className="contact-link" href="mailto:cpmclaughlin83@gmail.com"><Mail aria-hidden="true" /><span><b>EMAIL</b><br />cpmclaughlin83@gmail.com</span></a></div>
+            <div className="actions contact-actions"><a className="button button-primary" href="tel:6507229511">CONTACT ME</a><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink><a className="contact-link" href="mailto:cpmclaughlin83@gmail.com"><Mail aria-hidden="true" /><span><b>EMAIL</b><br />cpmclaughlin83@gmail.com</span></a></div>
           </div>
         </section>
       </main>
