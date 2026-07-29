@@ -1,9 +1,9 @@
 import { AssetImage } from "./components/AssetImage";
-import { AlertTriangle, BarChart3, Flame, MessageSquare, Phone, ShieldCheck, Target, TrendingUp } from "lucide-react";
+import { AlertTriangle, BarChart3, Flame, Mail, MessageSquare, Phone, ShieldCheck, Target, TrendingUp } from "lucide-react";
 
 function ContactLink({ kind, children }) {
   const Icon = kind === "call" ? Phone : MessageSquare;
-  return <div className="contact-link"><Icon aria-hidden="true" /><span>{children}</span></div>;
+  return <a className="contact-link" href="tel:6507229511"><Icon aria-hidden="true" /><span>{children}</span></a>;
 }
 
 export default function App() {
@@ -46,7 +46,7 @@ export default function App() {
             <p className="eyebrow">RISE FROM WITHIN.</p>
             <h2>Become the athlete you were meant to be.</h2>
             <div className="features"><Feature icon={BarChart3} title="Train with Purpose" text="Every session designed to build you up." /><Feature icon={ShieldCheck} title="Stronger, Resilient, Ready" text="Build strength, confidence, and durability." /><Feature icon={Flame} title="Unleash Your Potential" text="Break limits. Set new standards." /></div>
-            <div className="actions contact-actions"><a className="button button-primary" href="mailto:hello@ironsoultraining.com">CONTACT ME</a><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink></div>
+            <div className="actions contact-actions"><a className="button button-primary" href="mailto:cpmclaughlin83@gmail.com">CONTACT ME</a><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink><a className="contact-link" href="mailto:cpmclaughlin83@gmail.com"><Mail aria-hidden="true" /><span><b>EMAIL</b><br />cpmclaughlin83@gmail.com</span></a></div>
           </div>
         </section>
       </main>
