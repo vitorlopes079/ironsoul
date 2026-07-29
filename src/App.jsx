@@ -3,7 +3,7 @@ import { AlertTriangle, BarChart3, Flame, MessageSquare, Phone, ShieldCheck, Tar
 
 function ContactLink({ kind, children }) {
   const Icon = kind === "call" ? Phone : MessageSquare;
-  return <a className="contact-link" href={kind === "call" ? "tel:5555555555" : "sms:5555555555"}><Icon aria-hidden="true" /><span>{children}</span></a>;
+  return <a className="contact-link" href={kind === "call" ? "tel:6507229511" : "sms:6507229511"}><Icon aria-hidden="true" /><span>{children}</span></a>;
 }
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
       <header className="site-header">
         <Brand />
         <div className="header-actions">
-          <a className="phone" href="tel:5555555555"><Phone size={17} aria-hidden="true" /> 555 555 5555</a>
+          <a className="phone" href="tel:6507229511"><Phone size={17} aria-hidden="true" /> 650 722 9511</a>
           <a className="button button-primary" href="#contact">CONTACT ME</a>
         </div>
       </header>
@@ -23,7 +23,7 @@ export default function App() {
             <p className="eyebrow">TRAIN HARD. RECOVER SMART. BECOME MORE.</p>
             <h1>STRONGER TODAY.<br />UNSTOPPABLE TOMORROW.</h1>
             <p className="lead">Personalized training and performance coaching to help athletes rise above, recover stronger, and achieve more.</p>
-            <div className="actions"><a className="button button-primary" href="#contact">CONTACT ME</a><a className="button button-outline" href="#solution">LEARN MORE</a></div>
+            <div className="actions"><a className="button button-primary" href="#contact">CONTACT ME</a></div>
           </div>
           <AssetImage className="hero-art" src="/assets/hero.png" alt="IronSoul coach" label="HERO IMAGE" />
         </section>
@@ -41,17 +41,17 @@ export default function App() {
         </section>
 
         <section className="rise" id="contact">
-          <AssetImage className="athlete-art" src="/assets/ATHLETE_PHOTO.png" alt="Athlete standing on a mountain peak at sunset" label="ATHLETE PHOTO" />
+          <AssetImage className="athlete-art" src="/assets/athlete-summit.jpeg" alt="Athlete standing on a mountain peak at sunset" label="ATHLETE PHOTO" />
           <div className="rise-copy">
             <p className="eyebrow">RISE FROM WITHIN.</p>
             <h2>Become the athlete you were meant to be.</h2>
             <div className="features"><Feature icon={BarChart3} title="Train with Purpose" text="Every session designed to build you up." /><Feature icon={ShieldCheck} title="Stronger, Resilient, Ready" text="Build strength, confidence, and durability." /><Feature icon={Flame} title="Unleash Your Potential" text="Break limits. Set new standards." /></div>
-            <div className="actions contact-actions"><a className="button button-primary" href="mailto:hello@ironsoultraining.com">CONTACT ME</a><ContactLink kind="call"><b>CALL</b><br />555 555 5555</ContactLink><ContactLink kind="text"><b>TEXT</b><br />555 555 5555</ContactLink></div>
+            <div className="actions contact-actions"><a className="button button-primary" href="mailto:hello@ironsoultraining.com">CONTACT ME</a><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink></div>
           </div>
         </section>
       </main>
 
-      <footer><Brand compact /><p>© 2024 IRONSOUL TRAINING. ALL RIGHTS RESERVED.</p><div><ContactLink kind="call"><b>CALL</b><br />555 555 5555</ContactLink><ContactLink kind="text"><b>TEXT</b><br />555 555 5555</ContactLink></div></footer>
+      <footer><Brand compact /><p>© 2024 IRONSOUL TRAINING. ALL RIGHTS RESERVED.</p><div><ContactLink kind="call"><b>CALL OR TEXT</b><br />650 722 9511</ContactLink></div></footer>
     </>
   );
 }
