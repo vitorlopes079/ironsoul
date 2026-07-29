@@ -6,7 +6,7 @@ body { overflow-x:hidden; }
 html { scroll-behavior:smooth; scroll-padding-top:88px; }
 body { margin:0; }
 a { color:inherit; text-decoration:none; }
-.site-header { min-height:100px; padding:14px max(46px, calc((100vw - 1200px)/2)); display:grid; grid-template-columns:minmax(280px, 1fr) auto; align-items:center; gap:28px; background:#f8f5f0; border-bottom:1px solid #ded4c9; }
+.site-header { min-height:100px; padding:14px max(46px, calc((100vw - 1200px)/2)); display:grid; grid-template-columns:minmax(280px, 1fr) auto; align-items:center; gap:28px; position:relative; z-index:2; background:#f8f5f0; border-bottom:1px solid #ded4c9; }
 .brand { display:flex; align-items:center; gap:11px; min-width:260px; height:78px; }
 .brand-mark { width:78px; height:78px; flex:none; }
 .brand-mark img { object-fit:contain; }
