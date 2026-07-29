@@ -3,7 +3,7 @@ import { AlertTriangle, BarChart3, Flame, MessageSquare, Phone, ShieldCheck, Tar
 
 function ContactLink({ kind, children }) {
   const Icon = kind === "call" ? Phone : MessageSquare;
-  return <a className="contact-link" href={kind === "call" ? "tel:6507229511" : "sms:6507229511"}><Icon aria-hidden="true" /><span>{children}</span></a>;
+  return <div className="contact-link"><Icon aria-hidden="true" /><span>{children}</span></div>;
 }
 
 export default function App() {

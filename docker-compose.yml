@@ -1,0 +1,8 @@
+services:
+  app:
+    image: ghcr.io/vitorlopes079/iron-soul:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
