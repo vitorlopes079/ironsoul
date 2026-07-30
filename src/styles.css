@@ -6,7 +6,7 @@ body { overflow-x:hidden; }
 html { scroll-behavior:smooth; scroll-padding-top:88px; }
 body { margin:0; }
 a { color:inherit; text-decoration:none; }
-.site-header { min-height:100px; padding:14px max(46px, calc((100vw - 1200px)/2)); display:grid; grid-template-columns:minmax(280px, 1fr) auto; align-items:center; gap:28px; position:relative; z-index:2; background:#f8f5f0; border-bottom:1px solid #ded4c9; }
+.site-header { min-height:100px; padding:14px max(46px, calc((100vw - 1200px)/2)); display:grid; grid-template-columns:auto minmax(0, 1fr) auto; align-items:center; gap:28px; position:relative; z-index:2; background:#f8f5f0; border-bottom:1px solid #ded4c9; }
 .brand { display:flex; align-items:center; gap:11px; min-width:260px; height:78px; }
 .brand-mark { width:78px; height:78px; flex:none; }
 .brand-mark img { object-fit:contain; }
@@ -16,11 +16,8 @@ a { color:inherit; text-decoration:none; }
 .wordmark small { color:#62594f; border-top:1px solid #ab9d8e; padding-top:5px; font-size:8px; line-height:1; font-weight:600; letter-spacing:.18em; }
 .header-actions,.actions,footer>div { display:flex; align-items:center; gap:18px; }
 .header-actions { justify-self:end; gap:22px; }
-.location { margin:0; display:flex; align-items:center; gap:8px; padding-right:22px; border-right:1px solid #d4c8ba; color:#5f564e; }
-.location-pin { width:15px; height:15px; flex:none; color:#c46a24; stroke-width:2.1; }
-.location-copy { display:flex; flex-direction:column; gap:2px; line-height:1.15; }
-.location-copy strong { font-family:"Barlow Condensed",sans-serif; font-size:13px; font-weight:700; letter-spacing:.04em; color:#3a342f; }
-.location-copy span { font-size:11px; font-weight:500; letter-spacing:.02em; color:#7a6f64; }
+.location { margin:0; display:flex; align-items:center; justify-content:center; gap:10px; min-width:0; font-family:"Barlow Condensed",sans-serif; font-size:clamp(16px, 1.55vw, 22px); font-weight:800; letter-spacing:.035em; line-height:1.15; color:#241f1c; text-align:center; }
+.location-pin { width:22px; height:22px; flex:none; color:#d9782b; stroke-width:2.35; }
 .phone { font-size:14px; font-weight:700; letter-spacing:.03em; display:flex; align-items:center; gap:7px; }
 .button { min-width:168px; padding:14px 23px; border:2px solid; border-radius:5px; display:inline-flex; justify-content:center; font-size:13px; font-weight:700; letter-spacing:.02em; transition:transform .15s, background .15s; }
 .button:hover { transform:translateY(-2px); }
@@ -92,9 +89,11 @@ footer .contact-link { color:#bbb; }
   .wordmark strong { font-size:28px; }
   .wordmark span { font-size:10px; margin:3px 0 5px 2px; }
   .wordmark small { font-size:5px; padding-top:4px; }
-  .location { display:none; }
   .phone { display:none; }
+  .header-actions { gap:12px; }
   .header-actions .button { min-width:0; padding:11px 14px; font-size:12px; }
+  .location { grid-column:1 / -1; order:3; font-size:16px; gap:8px; padding-top:2px; }
+  .location-pin { width:18px; height:18px; }
   .hero,.rise,.split-section { grid-template-columns:1fr; }
   .hero { --hero-image-scale:1.04; --hero-image-x:0px; --hero-image-y:28px; min-height:0; padding:48px 24px 38px; gap:35px; overflow:hidden; }
   .hero-art { height:315px; margin-bottom:0; }
@@ -113,6 +112,7 @@ footer .contact-link { color:#bbb; }
   .site-header { grid-template-columns:1fr; justify-items:center; gap:10px; }
   .brand { justify-content:center; }
   .header-actions { justify-self:center; }
+  .location { font-size:15px; }
   .hero { padding:38px 20px 30px; }
   .eyebrow { font-size:15px; margin-bottom:15px; }
   h1 { font-size:clamp(48px, 15vw, 66px); }

@@ -11,14 +11,11 @@ export default function App() {
     <>
       <header className="site-header">
         <Brand />
+        <p className="location">
+          <MapPin className="location-pin" aria-hidden="true" />
+          <span>At-home fitness training in the Bay Area, California, US</span>
+        </p>
         <div className="header-actions">
-          <p className="location">
-            <MapPin className="location-pin" aria-hidden="true" />
-            <span className="location-copy">
-              <strong>At-home fitness training</strong>
-              <span>Bay Area, California, US</span>
-            </span>
-          </p>
           <a className="phone" href="tel:6507229511"><Phone size={17} aria-hidden="true" /> 650 722 9511</a>
           <a className="button button-primary" href="tel:6507229511">CONTACT ME</a>
         </div>
