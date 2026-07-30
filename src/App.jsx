@@ -1,5 +1,5 @@
 import { AssetImage } from "./components/AssetImage";
-import { AlertTriangle, BarChart3, Flame, Mail, MessageSquare, Phone, ShieldCheck, Target, TrendingUp } from "lucide-react";
+import { AlertTriangle, BarChart3, Flame, Mail, MapPin, MessageSquare, Phone, ShieldCheck, Target } from "lucide-react";
 
 function ContactLink({ kind, children }) {
   const Icon = kind === "call" ? Phone : MessageSquare;
@@ -12,6 +12,13 @@ export default function App() {
       <header className="site-header">
         <Brand />
         <div className="header-actions">
+          <p className="location">
+            <MapPin className="location-pin" aria-hidden="true" />
+            <span className="location-copy">
+              <strong>At-home fitness training</strong>
+              <span>Bay Area, California, US</span>
+            </span>
+          </p>
           <a className="phone" href="tel:6507229511"><Phone size={17} aria-hidden="true" /> 650 722 9511</a>
           <a className="button button-primary" href="tel:6507229511">CONTACT ME</a>
         </div>
